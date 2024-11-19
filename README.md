@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Byzantine Fault Tolerance Visualization
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project is a simulation tool that visualizes Byzantine Fault Tolerance (BFT) in a distributed system with faulty and loyal nodes. The simulation demonstrates how nodes (generals) in a distributed system reach a consensus despite some faulty nodes that might try to disrupt the process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It involves simulating consensus-building amongst a number of generals where faulty generals may try to mislead other generals. The simulation is conducted with the help of Byzantine Fault Tolerance protocols and with loyal nodes, which show how the former can come up to an agreement even while there are present nodes that are faulty..
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Adjustable Number of Generals and Faulty Generals:** The number of generals (`numGenerals`) and faulty generals (`numFaulty`) can be set before starting the simulation.
+- **Voting Phase:** Simulate the voting process where loyal generals elect a leader.
+- **Proposal Phase:** The leader sends a proposal and other nodes sign it if they agree.
+- **Commit Phase:** The nodes can commit and pass the message to all nodes.
+- **Interactive UI:** The simulation provides an interactive visual representation of the nodes and their voting processes.
+- **Next Round Simulation:** After reaching consensus, users can start a new round of simulation automatically.
+  
+---
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React:** For building the user interface and handling the state management.
+- **CSS:** For styling the simulation and UI components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. **Clone the repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/<your-username>/byzantine-fault-tolerance-visualization.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigate into the project directory:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd byzantine-fault-tolerance-visualization
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies:**
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Run the app:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+   This will launch the app on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Start Simulation:** Set the number of generals and faulty generals, then click the "Start Simulation" button.
+- **Voting Phase:** During the simulation, the nodes will vote to elect a leader.
+- **Proposal Phase:** The leader proposes a message, and other nodes sign it.
+- **Next Round:** Once the consensus is reached, you can start a new round by clicking the "Next Round" button, which will reset the simulation with default values (4 generals and 1 faulty general).
 
-### Making a Progressive Web App
+---
+## Buttons
+- **Accept** The node can accept the Proposal and send the message to all nodes.
+- **Reject** The node can reject the Proposal and no message is send.
+- **View** For fault node Accept and Reject can be choosen Random.
+- **Commit** The node can commit and send message to all nodes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Demo
 
-### Advanced Configuration
+Demo of how the simulation works:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Start by setting the number of generals and faulty generals.**
+2. **Click the "Start Simulation" button to see the nodes and their interactions.**
+3. **Watch the voting phase where nodes elect a leader and engage in the consensus process.**
+4. **After the consensus is reached, you can click "Next Round" to simulate a new round with the same configuration.**
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Feel free to submit issues, and send pull requests if you would like to contribute to improving the visualization by adding new features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Credits
+
+- **Developers:**
+  - [B. Sowmith](https://www.linkedin.com/in/sowmith-balabhadra/)
+  - [D. Hanisha](https://www.linkedin.com/in/duvvuri-hanisha-a0b376269/)
+
+- **Mentor:**
+  - [D. Mallikarjun Reddy](https://www.linkedin.com/in/mallikarjun-reddy-dorsala-12533663/)
+
+---
+
