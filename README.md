@@ -75,7 +75,7 @@ It involves simulating consensus-building amongst a number of generals where fau
 ## Demo
 
 Demo of how the simulation works:
-1.**Visit**: https://pbft-visualization.netlify.app/
+1.**Visit**: **https://pbft-visualization.netlify.app/**
 2. **Start by setting the number of generals and faulty generals.**
 3. **Click the "Start Simulation" button to see the nodes and their interactions.**
 4. **Watch the voting phase where nodes elect a leader and engage in the consensus process.**
