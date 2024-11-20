@@ -74,12 +74,21 @@ It involves simulating consensus-building amongst a number of generals where fau
 
 ## Demo
 
-Demo of how the simulation works:
-1.**Visit**: **https://pbft-visualization.netlify.app/**
-2. **Start by setting the number of generals and faulty generals.**
-3. **Click the "Start Simulation" button to see the nodes and their interactions.**
-4. **Watch the voting phase where nodes elect a leader and engage in the consensus process.**
-5. **After the consensus is reached, you can click "Next Round" to simulate a new round with the same configuration.**
+You can view the live demo of the simulation:
+
+1. **Visit the website**:  
+   [Byzantine Fault Tolerance Visualization Demo](https://pbft-visualization.netlify.app/)
+
+2. **Set the configuration**:  
+   Start by setting the number of generals and faulty generals.
+
+3. **Click the "Start Simulation" button**:  
+   Watch as nodes appear and interact with each other during the simulation.
+
+4. **Watch the voting phase**:  
+   See how nodes elect a leader and engage in the consensus process.
+
+5. **After consensus is achieved**, click the **"Next Round"** button to simulate a new round with the same configuration.
 
 ---
 
