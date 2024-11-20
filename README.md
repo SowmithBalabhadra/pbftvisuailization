@@ -39,7 +39,7 @@ It involves simulating consensus-building amongst a number of generals where fau
 2. **Navigate into the project directory:**
 
   ```bash
-   cd byzantine-fault-tolerance-visualization
+    cd byzantine-fault-tolerance-visualization
    ```
 
 3. **Install dependencies:**
